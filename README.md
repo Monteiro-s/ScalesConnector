@@ -1,1 +1,2 @@
-# ScalesConnector - GPL-3.0-or-later
+# ScalesConnector
+GPL-3.0-or-later
