@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScalesConnector", "ScalesConnector\ScalesConnector.csproj", "{B85953D9-1346-4E11-82A8-EF3092CE3B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScalesConnectorCore", "ScalesConnectorCore\ScalesConnectorCore.csproj", "{77482AC2-EF5B-4E0E-AC0F-C4F207AB3EAA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "ConsoleApp1\Sample.csproj", "{BEE73D28-A156-40AE-90D7-D2B6E7F23BA6}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{B85953D9-1346-4E11-82A8-EF3092CE3B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B85953D9-1346-4E11-82A8-EF3092CE3B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B85953D9-1346-4E11-82A8-EF3092CE3B05}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77482AC2-EF5B-4E0E-AC0F-C4F207AB3EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77482AC2-EF5B-4E0E-AC0F-C4F207AB3EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77482AC2-EF5B-4E0E-AC0F-C4F207AB3EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77482AC2-EF5B-4E0E-AC0F-C4F207AB3EAA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BEE73D28-A156-40AE-90D7-D2B6E7F23BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BEE73D28-A156-40AE-90D7-D2B6E7F23BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEE73D28-A156-40AE-90D7-D2B6E7F23BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
