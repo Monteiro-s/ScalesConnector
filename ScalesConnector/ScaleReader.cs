@@ -71,7 +71,7 @@ namespace ScalesConnector
             RawReadText = _serialPort.ReadLine();
             
             LastReadWeight = Regex.IsMatch(RawReadText, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline) ?
-                 Regex.Match(input, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline).ToString() :
+                 Regex.Match(RawReadText, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline).ToString() :
                  LastReadWeight;
         }
 
