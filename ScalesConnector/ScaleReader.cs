@@ -30,6 +30,11 @@ namespace ScalesConnector
         /// The last valid value gotten from the scale
         /// </summary>
         public string LastReadWeight { get; private set; }
+        
+        /// <summary>
+        /// The last value gotten from the scale
+        /// </summary>
+        public string RawReadText { get; private set; }
 
         public ScaleReader(ScaleData initializer)
         {
@@ -56,10 +61,9 @@ namespace ScalesConnector
             if (!_serialPort.IsOpen)
                 _serialPort.Open();
 
-            string input = _serialPort.ReadLine();
-
-
-            LastReadWeight = Regex.IsMatch(input, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline) ?
+            RawReadText = _serialPort.ReadLine();
+            
+            LastReadWeight = Regex.IsMatch(RawReadText, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline) ?
                  Regex.Match(input, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline).ToString() :
                  LastReadWeight;
         }
