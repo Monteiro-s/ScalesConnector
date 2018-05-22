@@ -1,6 +1,7 @@
 ﻿using ScalesConnector;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -12,6 +13,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+
             ScaleData sd = new ScaleData
             {
                 BaudRate = 9600,
@@ -22,8 +25,11 @@ namespace ConsoleApp1
                  StopBits = (System.IO.Ports.StopBits)1,
                  StartString = "ABCD,",
                  StopString="kg",
-                 WeightRegex=@"[0-9 +-]*"
+                 WeightRegex=@"[0-9 +-]*",
+                 Tare = 800
             };
+
+            //in this sample the received data is "ABCD,          -100kg"
 
             ScaleReader sr = new ScaleReader(sd);
 

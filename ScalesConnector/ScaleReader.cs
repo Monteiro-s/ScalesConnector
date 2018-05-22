@@ -25,11 +25,11 @@ namespace ScalesConnector
         private string _startString;
         private string _stopString;
         private string _valueRegex;
-
+        private double _tare;
         /// <summary>
         /// The last valid value gotten from the scale
         /// </summary>
-        public string LastReadWeight { get; private set; }
+        public double LastReadWeight { get; private set; }
         
         /// <summary>
         /// The last value gotten from the scale
@@ -53,6 +53,7 @@ namespace ScalesConnector
             _startString = initializer.StartString;
             _stopString = initializer.StopString;
             _valueRegex = initializer.WeightRegex;
+            _tare = initializer.Tare;
         }
 
         /// <summary>
@@ -70,9 +71,12 @@ namespace ScalesConnector
             }
             RawReadText = _serialPort.ReadLine();
             
-            LastReadWeight = Regex.IsMatch(RawReadText, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline) ?
+            string read = Regex.IsMatch(RawReadText, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline) ?
                  Regex.Match(RawReadText, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline).ToString() :
-                 LastReadWeight;
+                 LastReadWeight.ToString();
+
+            LastReadWeight = double.Parse(RawReadText.Trim(' ').Replace('.',',')) - _tare;
+
         }
 
         /// <summary>
@@ -82,10 +86,16 @@ namespace ScalesConnector
         {
             if (!_serialPort.IsOpen)
                 return;
+            try
+            {
+                _serialPort.Dispose();
+            }
+            catch
+            { }
 
-            _serialPort.Dispose();
-            IsConnected = false;
             _serialPort.Close();
+            IsConnected = false;
+
         }
     }
 }

@@ -41,5 +41,10 @@ namespace ScalesConnector
         /// The Regex expression to get the weight, e.g. [0-9 +-]*
         /// </summary>
         public string WeightRegex { get; set; }
+
+        /// <summary>
+        /// The scale tare given by the manufacturer
+        /// </summary>
+        public double Tare { get; set; }
     }
 }
