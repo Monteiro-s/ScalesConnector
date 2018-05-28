@@ -75,7 +75,7 @@ namespace ScalesConnector
                  Regex.Match(RawReadText, regex, RegexOptions.IgnorePatternWhitespace | RegexOptions.IgnoreCase | RegexOptions.Singleline).ToString() :
                  LastReadWeight.ToString();
 
-            LastReadWeight = double.Parse(RawReadText.Trim(' ').Replace('.',',')) - _tare;
+            LastReadWeight = double.Parse(read.Trim(' ').Replace('.',',')) - _tare;
 
         }
 
