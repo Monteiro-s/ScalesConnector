@@ -5,9 +5,14 @@ A simple reader for serial port scales, using regex to filter the values
 
 
 ## Instalation
-This o package is available to download at Nuget.org
 
-*[Nuget Package Link](https://www.nuget.org/packages/ScalesConnector/)
+This o package is available to download at Nuget.org or use the following command on your package manager
+
+```sh
+PM> Install-Package ScalesConnector -Version 1.0.1
+```
+
+* [Nuget Package Link](https://www.nuget.org/packages/ScalesConnector/)
 
 
 ## License
