@@ -3,11 +3,11 @@ before_build:
  
 image:
 - Visual Studio 2017
-environment:
-  platform:
-   - x86
-   - Any CPU
-
-  configuration:
-   - Debug
-   - Release
+  
+platform:
+  - x86
+  - Any CPU
+  
+configuration:
+  - Debug
+  - Release
