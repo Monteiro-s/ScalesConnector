@@ -1,4 +1,4 @@
- ScalesConnector [![Travis Status](https://api.travis-ci.org/Monteiro-s/ScalesConnector.svg?branch=master)](//travis-ci.org/Monteiro-s/ScalesConnector) [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/ph7sag7v3uot2tvi/branch/master?svg=true)](https://ci.appveyor.com/project/luccasmf/scalesconnector/branch/master) [![License Badge](https://img.shields.io/badge/license-GPL%203.0-green.svg)](https://github.com/Monteiro-s/ScalesConnector/blob/master/LICENSE)
+ ScalesConnector [![Travis Status](https://api.travis-ci.org/Monteiro-s/ScalesConnector.svg?branch=master)](//travis-ci.org/Monteiro-s/ScalesConnector) [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/6sxhxye8wqr8ys7b/branch/master?svg=true)](https://ci.appveyor.com/project/luccasmf/scalesconnector/branch/master) [![License Badge](https://img.shields.io/badge/license-GPL%203.0-green.svg)](https://github.com/Monteiro-s/ScalesConnector/blob/master/LICENSE)
 ========
 
 A simple reader for serial port scales, using regex to filter the values
