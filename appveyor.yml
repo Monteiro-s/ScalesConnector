@@ -3,9 +3,8 @@ before_build:
  
 image:
 - Visual Studio 2017
-  
+
 platform:
-  - x86
   - Any CPU
   
 configuration:
