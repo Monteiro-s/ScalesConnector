@@ -1,0 +1,4 @@
+language: csharp
+solution: ScalesConnector.sln
+install:
+  - nuget restore ScalesConnector.sln
