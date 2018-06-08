@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ScalesConnector</id>
+    <version>$version$</version>
+    <title></title>
+    <authors>Luccas Monteiro; Wellington Monteiro</authors>
+    <owners>Luccas Monteiro; Wellington Monteiro</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.gnu.org/licenses/</licenseUrl>
+    <projectUrl>https://github.com/Monteiro-s/ScalesConnector</projectUrl>
+    <description>Connector for Serial port Scales, the output of the scales can be filtered using Regex. Developed in .Net Framework 3.5 to be compatible with Windows 7 computers.</description>
+    <summary></summary>
+    <copyright>Monteiro's 2018</copyright>
+    <language>en-US</language>
+    <dependencies>
+      <group targetFramework=".NETFramework2.0" />
+      <group targetFramework=".NETFramework3.5" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="ScalesConnector\bin\$configuration$\ScalesConnector.dll" target="lib\net35\" />
+  </files>
+</package>

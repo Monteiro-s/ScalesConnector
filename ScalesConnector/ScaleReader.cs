@@ -56,6 +56,19 @@ namespace ScalesConnector
             _tare = initializer.Tare;
         }
 
+
+        /// <summary>
+        /// Just Connect the serial port
+        /// </summary>
+        public void Connect()
+        {
+            if (IsConnected) return;
+
+            _serialPort.Open();
+            IsConnected = true;
+        }
+
+
         /// <summary>
         /// Reads the value from the Scale and validate it with the given parameter
         /// </summary>
