@@ -1,0 +1,12 @@
+before_build:
+  - nuget restore
+ 
+image:
+- Visual Studio 2017
+
+platform:
+  - Any CPU
+  
+configuration:
+  - Debug
+  - Release
